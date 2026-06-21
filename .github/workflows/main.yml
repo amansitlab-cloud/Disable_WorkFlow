@@ -1,0 +1,12 @@
+name: Disable_WorkFlow
+
+on: 
+  push: 
+    branches: [ main ]
+jobs:
+  disable:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Disable_Task
+        run: echo "Don't Run THis Task"
